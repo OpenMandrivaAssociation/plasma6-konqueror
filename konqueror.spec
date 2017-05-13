@@ -9,6 +9,7 @@ Url:		http://www.kde.org
 Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KCMUtils)
+BuildRequires:	cmake(KF5Activities)
 BuildRequires:	cmake(KF5KHtml)
 BuildRequires:	cmake(KF5Init)
 BuildRequires:	cmake(KF5KDELibs4Support)
