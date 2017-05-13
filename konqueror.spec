@@ -47,6 +47,7 @@ KDE file and web browser.
 %{_kde5_applicationsdir}/kfmclient.desktop
 %{_kde5_applicationsdir}/kfmclient_html.desktop
 %{_kde5_applicationsdir}/kfmclient_war.desktop
+%{_kde5_applicationsdir}/kfmclient_dir.desktop
 %{_kde5_applicationsdir}/konqbrowser.desktop
 %{_kde5_autostart}/konqy_preload.desktop
 %{_bindir}/kfmclient
@@ -56,15 +57,8 @@ KDE file and web browser.
 %{_datadir}/kcontrol/*
 %{_datadir}/konqueror/about/*
 %{_datadir}/konqueror/pics/indicator_*.png
-%{_docdir}/HTML/en/konqueror/
-%{_docdir}/HTML/en/kcontrol5/bookmarks/
-%{_docdir}/HTML/en/kcontrol5/filemanager/
-%{_docdir}/HTML/en/kcontrol5/kcmcss/
-%{_docdir}/HTML/en/kcontrol5/khtml-adblock/
-%{_docdir}/HTML/en/kcontrol5/khtml-behavior/
-%{_docdir}/HTML/en/kcontrol5/khtml-general/
-%{_docdir}/HTML/en/kcontrol5/khtml-java-js/
-%{_docdir}/HTML/en/kcontrol5/performance/
+%{_docdir}/HTML/*/konqueror/
+%{_docdir}/HTML/*/kcontrol5/
 %{_libdir}/libkdeinit5_kfmclient.so
 %{_libdir}/libkdeinit5_konqueror.so
 %{_kde5_services}/bookmarks.desktop
@@ -130,6 +124,8 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/khtml/kpartplugins/plugin_validators.rc
 %{_datadir}/khtml/kpartplugins/plugin_webarchiver.desktop
 %{_datadir}/khtml/kpartplugins/plugin_webarchiver.rc
+%{_datadir}/khtml/kpartplugins/khtmltts.desktop
+%{_datadir}/khtml/kpartplugins/khtmltts.rc
 %{_datadir}/konqueror/icons/hicolor/*/actions/google.*
 %{_datadir}/konqueror/icons/oxygen/scalable/actions/google.*
 %{_datadir}/konqueror/kpartplugins/searchbar.desktop
@@ -145,6 +141,8 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kwebkitpart/kpartplugins/plugin_translator.desktop
 %{_datadir}/kwebkitpart/kpartplugins/plugin_validators.desktop
 %{_datadir}/kwebkitpart/kpartplugins/plugin_validators.rc
+%{_datadir}/kwebkitpart/kpartplugins/khtmltts.desktop
+%{_datadir}/kwebkitpart/kpartplugins/khtmltts.rc
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/cssvalidator.*
 %{_iconsdir}/hicolor/*/actions/htmlvalidator.*
@@ -164,6 +162,7 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/domtreeviewerplugin.so
 %{_qt5_plugindir}/fsviewpart.so
 %{_qt5_plugindir}/khtmlsettingsplugin.so
+%{_qt5_plugindir}/khtmlttsplugin.so
 %{_qt5_plugindir}/kimgallery.so
 %{_qt5_plugindir}/konq_shellcmdplugin.so
 %{_qt5_plugindir}/minitoolsplugin.so
@@ -198,7 +197,7 @@ Plasma 5 embeddable HTML component.
 %files webenginepart -f webenginepart.lang
 %{_iconsdir}/*/*/*/webengine.*
 %{_libdir}/libkwebenginepartlib.so
-%{_kde5_plugindir}/parts/webenginepart.so
+%{_libdir}/qt5/plugins/kf5/parts/webenginepart.so
 %{_kde5_services}/webenginepart.desktop
 %{_kde5_xmlguidir}/webenginepart/webenginepart.rc
 
@@ -231,8 +230,8 @@ Requires:	%{name}-libkonq
 KDE Frameworks 5 Konq shared library.
 
 %files -n %{libkf5konq}
-%{_kde5_libdir}/libKF5Konq.so.%{kf5konq_major}*
-%{_kde5_libdir}/libKF5Konq.so.5.97.0
+%{_libdir}/libKF5Konq.so.%{kf5konq_major}*
+%{_libdir}/libKF5Konq.so.5.97.0
 
 #----------------------------------------------------------------------------
 
