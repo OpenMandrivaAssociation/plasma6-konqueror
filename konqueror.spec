@@ -1,6 +1,6 @@
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	17.04.2
+Version:	17.04.3
 Release:	1
 Epoch:		1
 License:	GPLv2+
