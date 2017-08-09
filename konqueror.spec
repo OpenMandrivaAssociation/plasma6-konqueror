@@ -1,6 +1,6 @@
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	17.04.3
+Version:	17.07.90
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -44,6 +44,7 @@ Requires:	%{name}-webenginepart
 KDE file and web browser.
 
 %files -f %{name}.lang
+%{_sysconfdir}/xdg/konqueror.categories
 %{_kde5_applicationsdir}/kfmclient.desktop
 %{_kde5_applicationsdir}/kfmclient_html.desktop
 %{_kde5_applicationsdir}/kfmclient_war.desktop
@@ -74,7 +75,6 @@ KDE file and web browser.
 %{_kde5_services}/org.kde.konqueror.desktop
 %{_kde5_servicetypes}/konqaboutpage.desktop
 %{_kde5_iconsdir}/*/*/*/konqueror.*
-%{_kde5_xmlguidir}/konqueror/konqueror.rc
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
 %{_qt5_plugindir}/kcm_bookmarks.so
