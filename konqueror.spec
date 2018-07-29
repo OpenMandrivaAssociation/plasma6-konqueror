@@ -1,12 +1,13 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	 18.04.3
+Version:	18.07.80
 Release:	1
-Epoch:		1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	cmake(KF5Activities)
@@ -172,6 +173,10 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/validatorsplugin.so
 %{_qt5_plugindir}/webarchiverplugin.so
 %{_qt5_plugindir}/webarchivethumbnail.so
+%{_sysconfdir}/xdg/akregatorplugin.categories
+%{_libdir}/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
+%{_datadir}/kservices5/akregator_konqplugin.desktop
+%{_datadir}/webenginepart/error.html
 
 #----------------------------------------------------------------------------
 
