@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	18.12.0
+Version:	18.12.1
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -129,7 +129,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/khtml/kpartplugins/khtmltts.desktop
 %{_datadir}/khtml/kpartplugins/khtmltts.rc
 %{_datadir}/konqueror/icons/hicolor/*/actions/google.*
-%{_datadir}/konqueror/icons/oxygen/scalable/actions/google.*
 %{_datadir}/konqueror/kpartplugins/searchbar.desktop
 %{_datadir}/konqueror/kpartplugins/searchbar.rc
 %{_datadir}/konqueror/opensearch/google.xml
@@ -145,6 +144,18 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kwebkitpart/kpartplugins/plugin_validators.rc
 %{_datadir}/kwebkitpart/kpartplugins/khtmltts.desktop
 %{_datadir}/kwebkitpart/kpartplugins/khtmltts.rc
+%{_datadir}/webenginepart/kpartplugins/akregator_konqfeedicon.desktop
+%{_datadir}/webenginepart/kpartplugins/akregator_konqfeedicon.rc
+%{_datadir}/webenginepart/kpartplugins/autorefresh.desktop
+%{_datadir}/webenginepart/kpartplugins/autorefresh.rc
+%{_datadir}/webenginepart/kpartplugins/khtmlsettingsplugin.desktop
+%{_datadir}/webenginepart/kpartplugins/khtmlsettingsplugin.rc
+%{_datadir}/webenginepart/kpartplugins/khtmltts.desktop
+%{_datadir}/webenginepart/kpartplugins/khtmltts.rc
+%{_datadir}/webenginepart/kpartplugins/plugin_babelfish.rc
+%{_datadir}/webenginepart/kpartplugins/plugin_translator.desktop
+%{_datadir}/webenginepart/kpartplugins/plugin_validators.desktop
+%{_datadir}/webenginepart/kpartplugins/plugin_validators.rc
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/cssvalidator.*
 %{_iconsdir}/hicolor/*/actions/htmlvalidator.*
@@ -152,8 +163,6 @@ This module contains plugins that interact with Konqueror.
 %{_iconsdir}/hicolor/*/actions/validators.*
 %{_iconsdir}/hicolor/*/actions/webarchiver.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
-%{_iconsdir}/oxygen/scalable/actions/htmlvalidator.svgz
-%{_iconsdir}/oxygen/scalable/actions/validators.svgz
 %{_kde5_services}/fsview_part.desktop
 %{_kde5_services}/webarchivethumbnail.desktop
 %{_kde5_sysconfdir}/xdg/translaterc
