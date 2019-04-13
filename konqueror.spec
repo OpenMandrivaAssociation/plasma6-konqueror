@@ -2,8 +2,8 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	18.12.3
-Release:	2
+Version:	19.04.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
@@ -211,7 +211,7 @@ Plasma 5 embeddable HTML component.
 
 %files webenginepart -f webenginepart.lang
 %{_iconsdir}/*/*/*/webengine.*
-%{_libdir}/libkwebenginepartlib.so
+%{_libdir}/libkwebenginepart.so
 %{_libdir}/qt5/plugins/kf5/parts/webenginepart.so
 %{_kde5_services}/webenginepart.desktop
 %{_kde5_xmlguidir}/webenginepart/webenginepart.rc
