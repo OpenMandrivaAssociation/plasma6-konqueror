@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -46,7 +46,7 @@ Requires:	%{name}-webenginepart
 KDE file and web browser.
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/konqueror.categories
+%{_datadir}/qlogging-categories5/konqueror.categories
 %{_kde5_applicationsdir}/kfmclient.desktop
 %{_kde5_applicationsdir}/kfmclient_html.desktop
 %{_kde5_applicationsdir}/kfmclient_war.desktop
@@ -182,7 +182,7 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/validatorsplugin.so
 %{_qt5_plugindir}/webarchiverplugin.so
 %{_qt5_plugindir}/webarchivethumbnail.so
-%{_sysconfdir}/xdg/akregatorplugin.categories
+%{_datadir}/qlogging-categories5/akregatorplugin.categories
 %{_libdir}/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
 %{_datadir}/kservices5/akregator_konqplugin.desktop
 %{_datadir}/webenginepart/error.html
