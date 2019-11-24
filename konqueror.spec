@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	19.08.3
+Version:	19.11.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -99,14 +99,12 @@ This module contains plugins that interact with Konqueror.
 %files plugins -f plugins.lang
 %{_bindir}/fsview
 %{_datadir}/akregator/pics/feed.png
-%{_datadir}/config.kcfg/validators.kcfg
 %{_datadir}/dolphinpart/kpartplugins/dirfilterplugin.desktop
 %{_datadir}/dolphinpart/kpartplugins/dirfilterplugin.rc
 %{_datadir}/dolphinpart/kpartplugins/kimgalleryplugin.desktop
 %{_datadir}/dolphinpart/kpartplugins/kimgalleryplugin.rc
 %{_datadir}/dolphinpart/kpartplugins/kshellcmdplugin.desktop
 %{_datadir}/dolphinpart/kpartplugins/kshellcmdplugin.rc
-%{_datadir}/domtreeviewer/domtreeviewerui.rc
 %{_datadir}/fsview/fsview_part.rc
 %{_datadir}/khtml/kpartplugins/akregator_konqfeedicon.desktop
 %{_datadir}/khtml/kpartplugins/akregator_konqfeedicon.rc
@@ -114,18 +112,8 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/khtml/kpartplugins/autorefresh.rc
 %{_datadir}/khtml/kpartplugins/khtmlsettingsplugin.desktop
 %{_datadir}/khtml/kpartplugins/khtmlsettingsplugin.rc
-%{_datadir}/khtml/kpartplugins/minitoolsplugin.desktop
-%{_datadir}/khtml/kpartplugins/minitoolsplugin.rc
 %{_datadir}/khtml/kpartplugins/plugin_babelfish.rc
-%{_datadir}/khtml/kpartplugins/plugin_domtreeviewer.desktop
-%{_datadir}/khtml/kpartplugins/plugin_domtreeviewer.rc
-%{_datadir}/khtml/kpartplugins/plugin_rellinks.desktop
-%{_datadir}/khtml/kpartplugins/plugin_rellinks.rc
 %{_datadir}/khtml/kpartplugins/plugin_translator.desktop
-%{_datadir}/khtml/kpartplugins/plugin_validators.desktop
-%{_datadir}/khtml/kpartplugins/plugin_validators.rc
-%{_datadir}/khtml/kpartplugins/plugin_webarchiver.desktop
-%{_datadir}/khtml/kpartplugins/plugin_webarchiver.rc
 %{_datadir}/khtml/kpartplugins/khtmltts.desktop
 %{_datadir}/khtml/kpartplugins/khtmltts.rc
 %{_datadir}/konqueror/icons/hicolor/*/actions/google.*
@@ -140,8 +128,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kwebkitpart/kpartplugins/khtmlsettingsplugin.rc
 %{_datadir}/kwebkitpart/kpartplugins/plugin_babelfish.rc
 %{_datadir}/kwebkitpart/kpartplugins/plugin_translator.desktop
-%{_datadir}/kwebkitpart/kpartplugins/plugin_validators.desktop
-%{_datadir}/kwebkitpart/kpartplugins/plugin_validators.rc
 %{_datadir}/kwebkitpart/kpartplugins/khtmltts.desktop
 %{_datadir}/kwebkitpart/kpartplugins/khtmltts.rc
 %{_datadir}/webenginepart/kpartplugins/akregator_konqfeedicon.desktop
@@ -154,34 +140,21 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/webenginepart/kpartplugins/khtmltts.rc
 %{_datadir}/webenginepart/kpartplugins/plugin_babelfish.rc
 %{_datadir}/webenginepart/kpartplugins/plugin_translator.desktop
-%{_datadir}/webenginepart/kpartplugins/plugin_validators.desktop
-%{_datadir}/webenginepart/kpartplugins/plugin_validators.rc
 %{_iconsdir}/hicolor/*/actions/babelfish.*
-%{_iconsdir}/hicolor/*/actions/cssvalidator.*
-%{_iconsdir}/hicolor/*/actions/htmlvalidator.*
 %{_iconsdir}/hicolor/*/actions/imagegallery.*
-%{_iconsdir}/hicolor/*/actions/validators.*
-%{_iconsdir}/hicolor/*/actions/webarchiver.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
 %{_kde5_services}/fsview_part.desktop
-%{_kde5_services}/webarchivethumbnail.desktop
 %{_kde5_sysconfdir}/xdg/translaterc
 %{_qt5_plugindir}/akregatorkonqfeedicon.so
 %{_qt5_plugindir}/autorefresh.so
 %{_qt5_plugindir}/babelfishplugin.so
 %{_qt5_plugindir}/dirfilterplugin.so
-%{_qt5_plugindir}/domtreeviewerplugin.so
 %{_qt5_plugindir}/fsviewpart.so
 %{_qt5_plugindir}/khtmlsettingsplugin.so
 %{_qt5_plugindir}/khtmlttsplugin.so
 %{_qt5_plugindir}/kimgallery.so
 %{_qt5_plugindir}/konq_shellcmdplugin.so
-%{_qt5_plugindir}/minitoolsplugin.so
-%{_qt5_plugindir}/rellinksplugin.so
 %{_qt5_plugindir}/searchbarplugin.so
-%{_qt5_plugindir}/validatorsplugin.so
-%{_qt5_plugindir}/webarchiverplugin.so
-%{_qt5_plugindir}/webarchivethumbnail.so
 %{_datadir}/qlogging-categories5/akregatorplugin.categories
 %{_libdir}/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
 %{_datadir}/kservices5/akregator_konqplugin.desktop
@@ -284,12 +257,10 @@ based on %{name}.
 %install
 %ninja_install -C build
 
-%find_lang adblock
 %find_lang akregator_konqplugin
 %find_lang autorefresh
 %find_lang babelfish
 %find_lang dirfilterplugin
-%find_lang domtreeviewer
 %find_lang fsview
 %find_lang imgalleryplugin
 %find_lang kcmbookmarks
@@ -300,13 +271,8 @@ based on %{name}.
 %find_lang khtmlsettingsplugin
 %find_lang khtmltts
 %find_lang kshellcmdplugin
-%find_lang mf_konqplugin
-%find_lang minitoolsplugin
-%find_lang rellinks
 %find_lang searchbarplugin
 %find_lang uachangerplugin
-%find_lang validatorsplugin
-%find_lang webarchiver
 cat *.lang >plugins.lang
 
 %find_lang konqueror
