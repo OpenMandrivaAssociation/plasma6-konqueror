@@ -2,12 +2,12 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	cmake(KF5Activities)
