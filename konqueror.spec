@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -72,10 +72,8 @@ KDE file and web browser.
 %{_kde5_services}/khtml_filter.desktop
 %{_kde5_services}/khtml_general.desktop
 %{_kde5_services}/khtml_java_js.desktop
-%{_kde5_services}/konq_aboutpage.desktop
 %{_kde5_services}/khtml_appearance.desktop
 %{_kde5_services}/org.kde.konqueror.desktop
-%{_kde5_servicetypes}/konqaboutpage.desktop
 %{_kde5_iconsdir}/*/*/*/konqueror.*
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
@@ -83,7 +81,6 @@ KDE file and web browser.
 %{_qt5_plugindir}/kcm_konq.so
 %{_qt5_plugindir}/kcm_konqhtml.so
 %{_qt5_plugindir}/kcm_performance.so
-%{_qt5_plugindir}/konq_aboutpage.so
 
 #------------------------------------------------
 
