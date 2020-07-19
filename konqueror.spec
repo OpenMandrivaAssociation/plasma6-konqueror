@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	20.04.3
+Version:	20.07.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -102,7 +102,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/dolphinpart/kpartplugins/kimgalleryplugin.rc
 %{_datadir}/dolphinpart/kpartplugins/kshellcmdplugin.desktop
 %{_datadir}/dolphinpart/kpartplugins/kshellcmdplugin.rc
-%{_datadir}/fsview/fsview_part.rc
 %{_datadir}/khtml/kpartplugins/akregator_konqfeedicon.desktop
 %{_datadir}/khtml/kpartplugins/akregator_konqfeedicon.rc
 %{_datadir}/khtml/kpartplugins/autorefresh.desktop
@@ -137,6 +136,8 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/webenginepart/kpartplugins/khtmltts.rc
 %{_datadir}/webenginepart/kpartplugins/plugin_babelfish.rc
 %{_datadir}/webenginepart/kpartplugins/plugin_translator.desktop
+%{_datadir}/webenginepart/kpartplugins/uachangerplugin.desktop
+%{_datadir}/webenginepart/kpartplugins/uachangerplugin.rc
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/imagegallery.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
@@ -156,6 +157,23 @@ This module contains plugins that interact with Konqueror.
 %{_libdir}/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
 %{_datadir}/kservices5/akregator_konqplugin.desktop
 %{_datadir}/webenginepart/error.html
+%{_sysconfdir}/xdg/konqsidebartngrc
+%{_qt5_plugindir}/kcm_history.so
+%{_qt5_plugindir}/konq_sidebar.so
+%{_qt5_plugindir}/konqsidebar_bookmarks.so
+%{_qt5_plugindir}/konqsidebar_history.so
+%{_qt5_plugindir}/konqsidebar_places.so
+%{_qt5_plugindir}/konqsidebar_tree.so
+%{_qt5_plugindir}/uachangerplugin.so
+%{_datadir}/khtml/kpartplugins/uachangerplugin.desktop
+%{_datadir}/khtml/kpartplugins/uachangerplugin.rc
+%{_datadir}/konqsidebartng
+%{_datadir}/kservices5/kcmhistory.desktop
+%{_datadir}/kservices5/konq_sidebartng.desktop
+%{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.desktop
+%{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.rc
+%{_datadir}/kxmlgui5/fsview/fsview_part.rc
+%{_datadir}/qlogging-categories5/fsview.categories
 
 #----------------------------------------------------------------------------
 
@@ -217,6 +235,8 @@ KDE Frameworks 5 Konq shared library.
 %files -n %{libkf5konq}
 %{_libdir}/libKF5Konq.so.%{kf5konq_major}*
 %{_libdir}/libKF5Konq.so.5.97.0
+%{_libdir}/libkonqsidebarplugin.so.*
+%{_libdir}/libkonquerorprivate.so.*
 
 #----------------------------------------------------------------------------
 
@@ -239,8 +259,10 @@ based on %{name}.
 %{_includedir}/KF5/konq_popupmenu.h
 %{_includedir}/KF5/konq_version.h
 %{_includedir}/KF5/libkonq_export.h
+%{_includedir}/konqsidebarplugin.h
 %{_libdir}/cmake/KF5Konq
 %{_libdir}/libKF5Konq.so
+%{_libdir}/libkonqsidebarplugin.so
 
 #----------------------------------------------------------------------
 
