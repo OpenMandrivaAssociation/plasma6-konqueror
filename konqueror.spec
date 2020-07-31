@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	20.07.80
+Version:	20.07.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
