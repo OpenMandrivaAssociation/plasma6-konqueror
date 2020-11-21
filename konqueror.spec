@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -174,6 +174,19 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.rc
 %{_datadir}/kxmlgui5/fsview/fsview_part.rc
 %{_datadir}/qlogging-categories5/fsview.categories
+# = webarchive plugin =
+%{_bindir}/kcreatewebarchive
+%{_libdir}/qt5/plugins/webarchiverplugin.so
+%{_libdir}/qt5/plugins/webarchivethumbnail.so
+%{_datadir}/config.kcfg/kcreatewebarchive.kcfg
+%{_datadir}/icons/hicolor/*/actions/webarchiver.*
+%{_datadir}/kconf_update/webenginepart.upd
+%{_datadir}/khtml/kpartplugins/plugin_webarchiver.*
+%{_datadir}/kservices5/webarchivethumbnail.desktop
+%{_datadir}/kwebkitpart/kpartplugins/plugin_webarchiver.desktop
+%{_datadir}/kwebkitpart/kpartplugins/plugin_webarchiver.rc
+%{_datadir}/webenginepart/kpartplugins/plugin_webarchiver.desktop
+%{_datadir}/webenginepart/kpartplugins/plugin_webarchiver.rc
 
 #----------------------------------------------------------------------------
 
@@ -292,6 +305,7 @@ based on %{name}.
 %find_lang kshellcmdplugin
 %find_lang searchbarplugin
 %find_lang uachangerplugin
+%find_lang webarchiver
 cat *.lang >plugins.lang
 
 %find_lang konqueror
