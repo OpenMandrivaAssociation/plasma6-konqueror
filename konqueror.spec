@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -147,19 +147,19 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/autorefresh.so
 %{_qt5_plugindir}/babelfishplugin.so
 %{_qt5_plugindir}/dirfilterplugin.so
-%{_qt5_plugindir}/fsviewpart.so
 %{_qt5_plugindir}/khtmlsettingsplugin.so
 %{_qt5_plugindir}/khtmlttsplugin.so
 %{_qt5_plugindir}/kimgallery.so
 %{_qt5_plugindir}/konq_shellcmdplugin.so
 %{_qt5_plugindir}/searchbarplugin.so
+%{_qt5_plugindir}/kf5/parts/fsviewpart.so
+%{_qt5_plugindir}/kf5/parts/konq_sidebar.so
 %{_datadir}/qlogging-categories5/akregatorplugin.categories
 %{_libdir}/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
 %{_datadir}/kservices5/akregator_konqplugin.desktop
 %{_datadir}/webenginepart/error.html
 %{_sysconfdir}/xdg/konqsidebartngrc
 %{_qt5_plugindir}/kcm_history.so
-%{_qt5_plugindir}/konq_sidebar.so
 %{_qt5_plugindir}/konqsidebar_bookmarks.so
 %{_qt5_plugindir}/konqsidebar_history.so
 %{_qt5_plugindir}/konqsidebar_places.so
