@@ -173,6 +173,15 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kwebkitpart/kpartplugins/plugin_webarchiver.rc
 %{_datadir}/webenginepart/kpartplugins/plugin_webarchiver.desktop
 %{_datadir}/webenginepart/kpartplugins/plugin_webarchiver.rc
+%{_libdir}/qt5/plugins/konqueror_kcms/kcm_bookmarks.so
+%{_libdir}/qt5/plugins/konqueror_kcms/kcm_history.so
+%{_libdir}/qt5/plugins/konqueror_kcms/kcm_konq.so
+%{_libdir}/qt5/plugins/konqueror_kcms/kcm_performance.so
+%{_libdir}/qt5/plugins/konqueror_kcms/khtml_appearance.so
+%{_libdir}/qt5/plugins/konqueror_kcms/khtml_behavior.so
+%{_libdir}/qt5/plugins/konqueror_kcms/khtml_filter.so
+%{_libdir}/qt5/plugins/konqueror_kcms/khtml_general.so
+%{_libdir}/qt5/plugins/konqueror_kcms/khtml_java_js.so
 
 #----------------------------------------------------------------------------
 
