@@ -38,6 +38,7 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	tidy-devel
+BuildRequires:	pkgconfig(hunspell)
 Suggests:	keditbookmarks
 Suggests:	%{name}-plugins
 Requires:	%{name}-webenginepart
@@ -64,23 +65,10 @@ KDE file and web browser.
 %{_docdir}/HTML/*/kcontrol5/
 %{_libdir}/libkdeinit5_kfmclient.so
 %{_libdir}/libkdeinit5_konqueror.so
-%{_kde5_services}/bookmarks.desktop
-%{_kde5_services}/filebehavior.desktop
-%{_kde5_services}/kcmkonqyperformance.desktop
-%{_kde5_services}/kcmperformance.desktop
-%{_kde5_services}/khtml_behavior.desktop
-%{_kde5_services}/khtml_filter.desktop
-%{_kde5_services}/khtml_general.desktop
-%{_kde5_services}/khtml_java_js.desktop
-%{_kde5_services}/khtml_appearance.desktop
 %{_kde5_services}/org.kde.konqueror.desktop
 %{_kde5_iconsdir}/*/*/*/konqueror.*
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
-%{_qt5_plugindir}/kcm_bookmarks.so
-%{_qt5_plugindir}/kcm_konq.so
-%{_qt5_plugindir}/kcm_konqhtml.so
-%{_qt5_plugindir}/kcm_performance.so
 
 #------------------------------------------------
 
