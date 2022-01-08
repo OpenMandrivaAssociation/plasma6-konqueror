@@ -147,7 +147,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kservices5/akregator_konqplugin.desktop
 %{_datadir}/webenginepart/error.html
 %{_sysconfdir}/xdg/konqsidebartngrc
-%{_qt5_plugindir}/kcm_history.so
 %{_qt5_plugindir}/konqsidebar_bookmarks.so
 %{_qt5_plugindir}/konqsidebar_history.so
 %{_qt5_plugindir}/konqsidebar_places.so
@@ -156,7 +155,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/khtml/kpartplugins/uachangerplugin.desktop
 %{_datadir}/khtml/kpartplugins/uachangerplugin.rc
 %{_datadir}/konqsidebartng
-%{_datadir}/kservices5/kcmhistory.desktop
 %{_datadir}/kservices5/konq_sidebartng.desktop
 %{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.desktop
 %{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.rc
