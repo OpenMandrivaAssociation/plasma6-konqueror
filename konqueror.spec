@@ -253,6 +253,7 @@ based on %{name}.
 %{_includedir}/KF5/konq_events.h
 %{_includedir}/KF5/konq_historyentry.h
 %{_includedir}/KF5/konq_historyprovider.h
+%{_includedir}/KF5/konq_kpart_plugin.h
 %{_includedir}/KF5/konq_popupmenu.h
 %{_includedir}/KF5/konq_version.h
 %{_includedir}/KF5/libkonq_export.h
