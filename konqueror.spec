@@ -85,6 +85,18 @@ This module contains plugins that interact with Konqueror.
 %{_bindir}/fsview
 %{_datadir}/akregator/pics/feed.png
 %{_datadir}/konqueror/icons/hicolor/*/actions/google.*
+%{_datadir}/konqueror/partsrcfiles/akregatorkonqfeedicon.rc
+%{_datadir}/konqueror/partsrcfiles/autorefresh.rc
+%{_datadir}/konqueror/partsrcfiles/babelfishplugin.rc
+%{_datadir}/konqueror/partsrcfiles/dirfilterplugin.rc
+%{_datadir}/konqueror/partsrcfiles/khtmlsettingsplugin.rc
+%{_datadir}/konqueror/partsrcfiles/khtmlttsplugin.rc
+%{_datadir}/konqueror/partsrcfiles/kimgallery.rc
+%{_datadir}/konqueror/partsrcfiles/konq_shellcmdplugin.rc
+%{_datadir}/konqueror/partsrcfiles/konqueror_kget_browser_integration.rc
+%{_datadir}/konqueror/partsrcfiles/searchbarplugin.rc
+%{_datadir}/konqueror/partsrcfiles/uachangerplugin.rc
+%{_datadir}/konqueror/partsrcfiles/webarchiverplugin.rc
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/imagegallery.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
@@ -93,9 +105,40 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/akregatorkonqfeedicon.so
 %{_qt5_plugindir}/autorefresh.so
 %{_qt5_plugindir}/babelfishplugin.so
+%{_qt5_plugindir}/dolphinpart/kpartplugins/kimgallery.so
+%{_qt5_plugindir}/dolphinpart/kpartplugins/konq_shellcmdplugin.so
 %{_qt5_plugindir}/dirfilterplugin.so
+%{_qt5_plugindir}/khtml/kpartplugins/akregatorkonqfeediconkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/autorefreshkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/babelfishpluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/dirfilterpluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/khtmlsettingspluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/khtmlttspluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/konqueror_kget_browser_integrationkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/uachangerpluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/webarchiverpluginkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtmlsettingsplugin.so
 %{_qt5_plugindir}/khtmlttsplugin.so
+%{_qt5_plugindir}/konqueror/kpartplugins/searchbarplugin.so
+%{_qt5_plugindir}/konqueror_kget_browser_integration.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/akregatorkonqfeediconkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/autorefreshkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/babelfishpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/dirfilterpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/khtmlsettingspluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/khtmlttspluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/konqueror_kget_browser_integrationkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/uachangerpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/webarchiverpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/akregatorkonqfeediconwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/autorefreshwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/babelfishpluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/dirfilterpluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/khtmlsettingspluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/khtmlttspluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/konqueror_kget_browser_integrationwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/uachangerpluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/webarchiverpluginwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/kf5/parts/fsviewpart.so
 %{_qt5_plugindir}/kf5/parts/konq_sidebar.so
 %{_datadir}/qlogging-categories5/akregatorplugin.categories
@@ -241,6 +284,7 @@ based on %{name}.
 %find_lang kcmkonq
 %find_lang kcmperformance
 %find_lang kfmclient
+%find_lang kgetplugin
 %find_lang khtmlsettingsplugin
 %find_lang khtmltts
 %find_lang kshellcmdplugin
