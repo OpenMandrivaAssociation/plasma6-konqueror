@@ -84,48 +84,19 @@ This module contains plugins that interact with Konqueror.
 %files plugins -f plugins.lang
 %{_bindir}/fsview
 %{_datadir}/akregator/pics/feed.png
-%{_datadir}/dolphinpart/kpartplugins/dirfilterplugin.desktop
-%{_datadir}/dolphinpart/kpartplugins/dirfilterplugin.rc
-%{_datadir}/dolphinpart/kpartplugins/kimgalleryplugin.desktop
-%{_datadir}/dolphinpart/kpartplugins/kimgalleryplugin.rc
-%{_datadir}/dolphinpart/kpartplugins/kshellcmdplugin.desktop
-%{_datadir}/dolphinpart/kpartplugins/kshellcmdplugin.rc
-%{_datadir}/khtml/kpartplugins/akregator_konqfeedicon.desktop
-%{_datadir}/khtml/kpartplugins/akregator_konqfeedicon.rc
-%{_datadir}/khtml/kpartplugins/autorefresh.desktop
-%{_datadir}/khtml/kpartplugins/autorefresh.rc
-%{_datadir}/khtml/kpartplugins/khtmlsettingsplugin.desktop
-%{_datadir}/khtml/kpartplugins/khtmlsettingsplugin.rc
-%{_datadir}/khtml/kpartplugins/plugin_babelfish.rc
-%{_datadir}/khtml/kpartplugins/plugin_translator.desktop
-%{_datadir}/khtml/kpartplugins/khtmltts.desktop
-%{_datadir}/khtml/kpartplugins/khtmltts.rc
 %{_datadir}/konqueror/icons/hicolor/*/actions/google.*
-%{_datadir}/konqueror/kpartplugins/searchbar.desktop
-%{_datadir}/konqueror/kpartplugins/searchbar.rc
-%{_datadir}/konqueror/opensearch/google.xml
-%{_datadir}/kwebkitpart/kpartplugins/akregator_konqfeedicon.desktop
-%{_datadir}/kwebkitpart/kpartplugins/akregator_konqfeedicon.rc
-%{_datadir}/kwebkitpart/kpartplugins/autorefresh.desktop
-%{_datadir}/kwebkitpart/kpartplugins/autorefresh.rc
-%{_datadir}/kwebkitpart/kpartplugins/khtmlsettingsplugin.desktop
-%{_datadir}/kwebkitpart/kpartplugins/khtmlsettingsplugin.rc
-%{_datadir}/kwebkitpart/kpartplugins/plugin_babelfish.rc
-%{_datadir}/kwebkitpart/kpartplugins/plugin_translator.desktop
-%{_datadir}/kwebkitpart/kpartplugins/khtmltts.desktop
-%{_datadir}/kwebkitpart/kpartplugins/khtmltts.rc
-%{_datadir}/webenginepart/kpartplugins/akregator_konqfeedicon.desktop
-%{_datadir}/webenginepart/kpartplugins/akregator_konqfeedicon.rc
-%{_datadir}/webenginepart/kpartplugins/autorefresh.desktop
-%{_datadir}/webenginepart/kpartplugins/autorefresh.rc
-%{_datadir}/webenginepart/kpartplugins/khtmlsettingsplugin.desktop
-%{_datadir}/webenginepart/kpartplugins/khtmlsettingsplugin.rc
-%{_datadir}/webenginepart/kpartplugins/khtmltts.desktop
-%{_datadir}/webenginepart/kpartplugins/khtmltts.rc
-%{_datadir}/webenginepart/kpartplugins/plugin_babelfish.rc
-%{_datadir}/webenginepart/kpartplugins/plugin_translator.desktop
-%{_datadir}/webenginepart/kpartplugins/uachangerplugin.desktop
-%{_datadir}/webenginepart/kpartplugins/uachangerplugin.rc
+%{_datadir}/konqueror/partsrcfiles/akregatorkonqfeedicon.rc
+%{_datadir}/konqueror/partsrcfiles/autorefresh.rc
+%{_datadir}/konqueror/partsrcfiles/babelfishplugin.rc
+%{_datadir}/konqueror/partsrcfiles/dirfilterplugin.rc
+%{_datadir}/konqueror/partsrcfiles/khtmlsettingsplugin.rc
+%{_datadir}/konqueror/partsrcfiles/khtmlttsplugin.rc
+%{_datadir}/konqueror/partsrcfiles/kimgallery.rc
+%{_datadir}/konqueror/partsrcfiles/konq_shellcmdplugin.rc
+%{_datadir}/konqueror/partsrcfiles/konqueror_kget_browser_integration.rc
+%{_datadir}/konqueror/partsrcfiles/searchbarplugin.rc
+%{_datadir}/konqueror/partsrcfiles/uachangerplugin.rc
+%{_datadir}/konqueror/partsrcfiles/webarchiverplugin.rc
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/imagegallery.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
@@ -134,17 +105,44 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/akregatorkonqfeedicon.so
 %{_qt5_plugindir}/autorefresh.so
 %{_qt5_plugindir}/babelfishplugin.so
+%{_qt5_plugindir}/dolphinpart/kpartplugins/kimgallery.so
+%{_qt5_plugindir}/dolphinpart/kpartplugins/konq_shellcmdplugin.so
 %{_qt5_plugindir}/dirfilterplugin.so
+%{_qt5_plugindir}/khtml/kpartplugins/akregatorkonqfeediconkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/autorefreshkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/babelfishpluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/dirfilterpluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/khtmlsettingspluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/khtmlttspluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/konqueror_kget_browser_integrationkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/uachangerpluginkhtml_kpartplugins.so
+%{_qt5_plugindir}/khtml/kpartplugins/webarchiverpluginkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtmlsettingsplugin.so
 %{_qt5_plugindir}/khtmlttsplugin.so
-%{_qt5_plugindir}/kimgallery.so
-%{_qt5_plugindir}/konq_shellcmdplugin.so
-%{_qt5_plugindir}/searchbarplugin.so
+%{_qt5_plugindir}/konqueror/kpartplugins/searchbarplugin.so
+%{_qt5_plugindir}/konqueror_kget_browser_integration.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/akregatorkonqfeediconkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/autorefreshkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/babelfishpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/dirfilterpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/khtmlsettingspluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/khtmlttspluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/konqueror_kget_browser_integrationkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/uachangerpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/kwebkitpart/kpartplugins/webarchiverpluginkwebkitpart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/akregatorkonqfeediconwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/autorefreshwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/babelfishpluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/dirfilterpluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/khtmlsettingspluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/khtmlttspluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/konqueror_kget_browser_integrationwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/uachangerpluginwebenginepart_kpartplugins.so
+%{_qt5_plugindir}/webenginepart/kpartplugins/webarchiverpluginwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/kf5/parts/fsviewpart.so
 %{_qt5_plugindir}/kf5/parts/konq_sidebar.so
 %{_datadir}/qlogging-categories5/akregatorplugin.categories
 %{_libdir}/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
-%{_datadir}/kservices5/akregator_konqplugin.desktop
 %{_datadir}/webenginepart/error.html
 %{_sysconfdir}/xdg/konqsidebartngrc
 %{_qt5_plugindir}/konqsidebar_bookmarks.so
@@ -152,12 +150,8 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/konqsidebar_places.so
 %{_qt5_plugindir}/konqsidebar_tree.so
 %{_qt5_plugindir}/uachangerplugin.so
-%{_datadir}/khtml/kpartplugins/uachangerplugin.desktop
-%{_datadir}/khtml/kpartplugins/uachangerplugin.rc
 %{_datadir}/konqsidebartng
 %{_datadir}/kservices5/konq_sidebartng.desktop
-%{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.desktop
-%{_datadir}/kwebkitpart/kpartplugins/uachangerplugin.rc
 %{_datadir}/kxmlgui5/fsview/fsview_part.rc
 %{_datadir}/qlogging-categories5/fsview.categories
 # = webarchive plugin =
@@ -167,12 +161,7 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/config.kcfg/kcreatewebarchive.kcfg
 %{_datadir}/icons/hicolor/*/actions/webarchiver.*
 %{_datadir}/kconf_update/webenginepart.upd
-%{_datadir}/khtml/kpartplugins/plugin_webarchiver.*
 %{_datadir}/kservices5/webarchivethumbnail.desktop
-%{_datadir}/kwebkitpart/kpartplugins/plugin_webarchiver.desktop
-%{_datadir}/kwebkitpart/kpartplugins/plugin_webarchiver.rc
-%{_datadir}/webenginepart/kpartplugins/plugin_webarchiver.desktop
-%{_datadir}/webenginepart/kpartplugins/plugin_webarchiver.rc
 %{_libdir}/qt5/plugins/konqueror_kcms/kcm_bookmarks.so
 %{_libdir}/qt5/plugins/konqueror_kcms/kcm_history.so
 %{_libdir}/qt5/plugins/konqueror_kcms/kcm_konq.so
@@ -264,6 +253,7 @@ based on %{name}.
 %{_includedir}/KF5/konq_events.h
 %{_includedir}/KF5/konq_historyentry.h
 %{_includedir}/KF5/konq_historyprovider.h
+%{_includedir}/KF5/konq_kpart_plugin.h
 %{_includedir}/KF5/konq_popupmenu.h
 %{_includedir}/KF5/konq_version.h
 %{_includedir}/KF5/libkonq_export.h
@@ -295,6 +285,7 @@ based on %{name}.
 %find_lang kcmkonq
 %find_lang kcmperformance
 %find_lang kfmclient
+%find_lang kgetplugin
 %find_lang khtmlsettingsplugin
 %find_lang khtmltts
 %find_lang kshellcmdplugin
