@@ -2,7 +2,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	22.04.3
+Version:	22.07.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -107,11 +107,10 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/babelfishplugin.so
 %{_qt5_plugindir}/dolphinpart/kpartplugins/kimgallery.so
 %{_qt5_plugindir}/dolphinpart/kpartplugins/konq_shellcmdplugin.so
-%{_qt5_plugindir}/dirfilterplugin.so
+%{_qt5_plugindir}/dolphinpart/kpartplugins/dirfilterplugin.so
 %{_qt5_plugindir}/khtml/kpartplugins/akregatorkonqfeediconkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtml/kpartplugins/autorefreshkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtml/kpartplugins/babelfishpluginkhtml_kpartplugins.so
-%{_qt5_plugindir}/khtml/kpartplugins/dirfilterpluginkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtml/kpartplugins/khtmlsettingspluginkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtml/kpartplugins/khtmlttspluginkhtml_kpartplugins.so
 %{_qt5_plugindir}/khtml/kpartplugins/konqueror_kget_browser_integrationkhtml_kpartplugins.so
@@ -124,7 +123,6 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/kwebkitpart/kpartplugins/akregatorkonqfeediconkwebkitpart_kpartplugins.so
 %{_qt5_plugindir}/kwebkitpart/kpartplugins/autorefreshkwebkitpart_kpartplugins.so
 %{_qt5_plugindir}/kwebkitpart/kpartplugins/babelfishpluginkwebkitpart_kpartplugins.so
-%{_qt5_plugindir}/kwebkitpart/kpartplugins/dirfilterpluginkwebkitpart_kpartplugins.so
 %{_qt5_plugindir}/kwebkitpart/kpartplugins/khtmlsettingspluginkwebkitpart_kpartplugins.so
 %{_qt5_plugindir}/kwebkitpart/kpartplugins/khtmlttspluginkwebkitpart_kpartplugins.so
 %{_qt5_plugindir}/kwebkitpart/kpartplugins/konqueror_kget_browser_integrationkwebkitpart_kpartplugins.so
@@ -133,7 +131,6 @@ This module contains plugins that interact with Konqueror.
 %{_qt5_plugindir}/webenginepart/kpartplugins/akregatorkonqfeediconwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/webenginepart/kpartplugins/autorefreshwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/webenginepart/kpartplugins/babelfishpluginwebenginepart_kpartplugins.so
-%{_qt5_plugindir}/webenginepart/kpartplugins/dirfilterpluginwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/webenginepart/kpartplugins/khtmlsettingspluginwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/webenginepart/kpartplugins/khtmlttspluginwebenginepart_kpartplugins.so
 %{_qt5_plugindir}/webenginepart/kpartplugins/konqueror_kget_browser_integrationwebenginepart_kpartplugins.so
@@ -154,6 +151,8 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/kservices5/konq_sidebartng.desktop
 %{_datadir}/kxmlgui5/fsview/fsview_part.rc
 %{_datadir}/qlogging-categories5/fsview.categories
+%{_datadir}/applications/org.kde.konqueror.desktop
+%{_datadir}/konqueror/webengine_dictionaries
 # = webarchive plugin =
 %{_bindir}/kcreatewebarchive
 %{_libdir}/qt5/plugins/webarchiverplugin.so
