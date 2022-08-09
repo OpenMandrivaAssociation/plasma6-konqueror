@@ -39,6 +39,7 @@ BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	tidy-devel
 BuildRequires:	pkgconfig(hunspell)
+BuildRequires:	hunspell
 Suggests:	keditbookmarks
 Suggests:	%{name}-plugins
 Requires:	%{name}-webenginepart
