@@ -40,6 +40,7 @@ BuildRequires:	pkgconfig(zlib)
 BuildRequires:	tidy-devel
 BuildRequires:	pkgconfig(hunspell)
 BuildRequires:	hunspell
+BuildRequires:	myspell-en
 Suggests:	keditbookmarks
 Suggests:	%{name}-plugins
 Requires:	%{name}-webenginepart
