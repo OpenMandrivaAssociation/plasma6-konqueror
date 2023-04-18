@@ -71,6 +71,7 @@ KDE file and web browser.
 %{_kde5_iconsdir}/*/*/*/konqueror.*
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
+%{_libdir}/qt5/plugins/konqueror_kcms
 
 #------------------------------------------------
 
