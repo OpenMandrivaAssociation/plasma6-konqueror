@@ -72,6 +72,8 @@ KDE file and web browser.
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
 %{_libdir}/qt5/plugins/konqueror_kcms
+%{_sysconfdir}/xdg/useragenttemplatesrc
+%{_datadir}/applications/bookmarks.desktop
 
 #------------------------------------------------
 
@@ -263,6 +265,7 @@ based on %{name}.
 %{_libdir}/cmake/KF5Konq
 %{_libdir}/libKF5Konq.so
 %{_libdir}/libkonqsidebarplugin.so
+%{_includedir}/KF5/asyncselectorinterface.h
 
 #----------------------------------------------------------------------
 
