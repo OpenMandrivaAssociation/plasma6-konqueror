@@ -157,6 +157,27 @@ This module contains plugins that interact with Konqueror.
 %{_libdir}/qt6/plugins/konqueror_kcms/khtml_filter.so
 %{_libdir}/qt6/plugins/konqueror_kcms/khtml_general.so
 %{_libdir}/qt6/plugins/konqueror_kcms/khtml_java_js.so
+%{_libdir}/qt6/plugins/konqueror/sidebar
+%{_datadir}/applications/kcm_bookmarks.desktop
+%{_datadir}/kio_bookmarks
+%lang(ca) %{_docdir}/HTML/ca/kcontrol/*
+%lang(de) %{_docdir}/HTML/de/kcontrol/*
+%lang(es) %{_docdir}/HTML/es/kcontrol/*
+%lang(et) %{_docdir}/HTML/et/kcontrol/*
+%lang(fr) %{_docdir}/HTML/fr/kcontrol/*
+%lang(it) %{_docdir}/HTML/it/kcontrol/*
+%lang(ko) %{_docdir}/HTML/ko/kcontrol/*
+%lang(nb) %{_docdir}/HTML/nb/kcontrol/*
+%lang(nl) %{_docdir}/HTML/nl/kcontrol/*
+%lang(pt) %{_docdir}/HTML/pt/kcontrol/*
+%lang(pt_BR) %{_docdir}/HTML/pt_BR/kcontrol/*
+%lang(ru) %{_docdir}/HTML/ru/kcontrol/*
+%lang(sr) %{_docdir}/HTML/sr/kcontrol/*
+%lang(sr@latin) %{_docdir}/HTML/sr@latin/kcontrol/*
+%lang(sv) %{_docdir}/HTML/sv/kcontrol/*
+%lang(tr) %{_docdir}/HTML/tr/kcontrol/*
+%lang(uk) %{_docdir}/HTML/uk/kcontrol/*
+%lang(zh_CN) %{_docdir}/HTML/zh_CN/kcontrol/*
 
 #----------------------------------------------------------------------------
 
@@ -187,7 +208,7 @@ Plasma 6 embeddable HTML component.
 
 #----------------------------------------------------------------------------
 
-%define kf6konq_major 5
+%define kf6konq_major 7
 %define libkf6konq %mklibname KF6Konq %{kf6konq_major}
 
 %package -n %{libkf6konq}
@@ -200,6 +221,7 @@ KDE Frameworks 6 Konq shared library.
 
 %files -n %{libkf6konq}
 %{_libdir}/libKF6Konq.so.%{kf6konq_major}*
+%{_libdir}/libKF6Konq.so.5*
 %{_libdir}/libkonqsidebarplugin.so.*
 %{_libdir}/libkonquerorprivate.so.*
 
@@ -229,6 +251,7 @@ based on %{name}.
 %{_libdir}/libKF6Konq.so
 %{_libdir}/libkonqsidebarplugin.so
 %{_includedir}/KF6/asyncselectorinterface.h
+%{_includedir}/KF6/konqsidebarplugin.h
 
 #----------------------------------------------------------------------
 
@@ -263,6 +286,7 @@ based on %{name}.
 %find_lang searchbarplugin
 %find_lang uachangerplugin
 %find_lang webarchiver
+%find_lang kio6_bookmarks
 cat *.lang >plugins.lang
 
 %find_lang konqueror
