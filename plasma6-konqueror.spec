@@ -69,6 +69,7 @@ KDE file and web browser.
 %{_libdir}/qt6/plugins/konqueror_kcms
 %{_sysconfdir}/xdg/useragenttemplatesrc
 %{_datadir}/applications/bookmarks.desktop
+%{_qtdir}/plugins/kf6/kio/bookmarks.so
 
 #------------------------------------------------
 
