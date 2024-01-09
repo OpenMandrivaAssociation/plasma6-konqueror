@@ -63,9 +63,6 @@ KDE file and web browser.
 %{_datadir}/konqueror/pics/indicator_*.png
 %{_docdir}/HTML/*/konqueror/
 %{_docdir}/HTML/*/kcontrol6/
-%{_libdir}/libkdeinit6_kfmclient.so
-%{_libdir}/libkdeinit6_konqueror.so
-%{_datadir}/kservices6/org.kde.konqueror.desktop
 %{_datadir}/icons/*/*/*/konqueror.*
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
