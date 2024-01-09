@@ -90,7 +90,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/konqueror/partsrcfiles/babelfishplugin.rc
 %{_datadir}/konqueror/partsrcfiles/dirfilterplugin.rc
 %{_datadir}/konqueror/partsrcfiles/khtmlsettingsplugin.rc
-%{_datadir}/konqueror/partsrcfiles/khtmlttsplugin.rc
 %{_datadir}/konqueror/partsrcfiles/kimgallery.rc
 %{_datadir}/konqueror/partsrcfiles/konq_shellcmdplugin.rc
 %{_datadir}/konqueror/partsrcfiles/konqueror_kget_browser_integration.rc
@@ -100,8 +99,7 @@ This module contains plugins that interact with Konqueror.
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/imagegallery.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
-%{_datadir}/kservices6/fsview_part.desktop
-%{_kde6_sysconfdir}/xdg/translaterc
+%{_sysconfdir}/xdg/translaterc
 %{_qtdir}/plugins/akregatorkonqfeedicon.so
 %{_qtdir}/plugins/autorefresh.so
 %{_qtdir}/plugins/babelfishplugin.so
@@ -112,7 +110,6 @@ This module contains plugins that interact with Konqueror.
 %{_qtdir}/plugins/khtml/kpartplugins/autorefreshkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtml/kpartplugins/babelfishpluginkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtml/kpartplugins/khtmlsettingspluginkhtml_kpartplugins.so
-%{_qtdir}/plugins/khtml/kpartplugins/khtmlttspluginkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtml/kpartplugins/konqueror_kget_browser_integrationkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtml/kpartplugins/uachangerpluginkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtml/kpartplugins/webarchiverpluginkhtml_kpartplugins.so
@@ -132,7 +129,6 @@ This module contains plugins that interact with Konqueror.
 %{_qtdir}/plugins/webenginepart/kpartplugins/autorefreshwebenginepart_kpartplugins.so
 %{_qtdir}/plugins/webenginepart/kpartplugins/babelfishpluginwebenginepart_kpartplugins.so
 %{_qtdir}/plugins/webenginepart/kpartplugins/khtmlsettingspluginwebenginepart_kpartplugins.so
-%{_qtdir}/plugins/webenginepart/kpartplugins/khtmlttspluginwebenginepart_kpartplugins.so
 %{_qtdir}/plugins/webenginepart/kpartplugins/konqueror_kget_browser_integrationwebenginepart_kpartplugins.so
 %{_qtdir}/plugins/webenginepart/kpartplugins/uachangerpluginwebenginepart_kpartplugins.so
 %{_qtdir}/plugins/webenginepart/kpartplugins/webarchiverpluginwebenginepart_kpartplugins.so
@@ -142,14 +138,8 @@ This module contains plugins that interact with Konqueror.
 %{_libdir}/qt6/plugins/kf6/kfileitemaction/akregatorplugin.so
 %{_datadir}/webenginepart/error.html
 %{_sysconfdir}/xdg/konqsidebartngrc
-%{_qtdir}/plugins/konqsidebar_bookmarks.so
-%{_qtdir}/plugins/konqsidebar_history.so
-%{_qtdir}/plugins/konqsidebar_places.so
-%{_qtdir}/plugins/konqsidebar_tree.so
 %{_qtdir}/plugins/uachangerplugin.so
 %{_datadir}/konqsidebartng
-%{_datadir}/kservices6/konq_sidebartng.desktop
-%{_datadir}/kxmlgui6/fsview/fsview_part.rc
 %{_datadir}/qlogging-categories6/fsview.categories
 %{_datadir}/applications/org.kde.konqueror.desktop
 %{_datadir}/konqueror/webengine_dictionaries
@@ -160,7 +150,6 @@ This module contains plugins that interact with Konqueror.
 %{_datadir}/config.kcfg/kcreatewebarchive.kcfg
 %{_datadir}/icons/hicolor/*/actions/webarchiver.*
 %{_datadir}/kconf_update/webenginepart.upd
-%{_datadir}/kservices6/webarchivethumbnail.desktop
 %{_libdir}/qt6/plugins/konqueror_kcms/kcm_bookmarks.so
 %{_libdir}/qt6/plugins/konqueror_kcms/kcm_history.so
 %{_libdir}/qt6/plugins/konqueror_kcms/kcm_konq.so
