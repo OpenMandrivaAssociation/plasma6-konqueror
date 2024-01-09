@@ -48,12 +48,12 @@ KDE file and web browser.
 
 %files -f konqueror.lang
 %{_datadir}/qlogging-categories6/konqueror.categories
-%{_kde6_applicationsdir}/kfmclient.desktop
-%{_kde6_applicationsdir}/kfmclient_html.desktop
-%{_kde6_applicationsdir}/kfmclient_war.desktop
-%{_kde6_applicationsdir}/kfmclient_dir.desktop
-%{_kde6_applicationsdir}/konqbrowser.desktop
-%{_kde6_autostart}/konqy_preload.desktop
+%{_datadir}/applications/kfmclient.desktop
+%{_datadir}/applications/kfmclient_html.desktop
+%{_datadir}/applications/kfmclient_war.desktop
+%{_datadir}/applications/kfmclient_dir.desktop
+%{_datadir}/applications/konqbrowser.desktop
+%{_sysconfdir}/xdg/autostart/konqy_preload.desktop
 %{_bindir}/kfmclient
 %{_bindir}/konqueror
 %{_datadir}/config.kcfg/konqueror*
@@ -65,8 +65,8 @@ KDE file and web browser.
 %{_docdir}/HTML/*/kcontrol6/
 %{_libdir}/libkdeinit6_kfmclient.so
 %{_libdir}/libkdeinit6_konqueror.so
-%{_kde6_services}/org.kde.konqueror.desktop
-%{_kde6_iconsdir}/*/*/*/konqueror.*
+%{_datadir}/kservices6/org.kde.konqueror.desktop
+%{_datadir}/icons/*/*/*/konqueror.*
 %{_datadir}/metainfo/org.kde.konqueror.appdata.xml
 %{_datadir}/dbus-1/interfaces/org.kde.?onqueror.*.xml
 %{_libdir}/qt6/plugins/konqueror_kcms
@@ -103,7 +103,7 @@ This module contains plugins that interact with Konqueror.
 %{_iconsdir}/hicolor/*/actions/babelfish.*
 %{_iconsdir}/hicolor/*/actions/imagegallery.*
 %{_iconsdir}/hicolor/*/apps/fsview.*
-%{_kde6_services}/fsview_part.desktop
+%{_datadir}/kservices6/fsview_part.desktop
 %{_kde6_sysconfdir}/xdg/translaterc
 %{_qt6_plugindir}/akregatorkonqfeedicon.so
 %{_qt6_plugindir}/autorefresh.so
@@ -200,7 +200,7 @@ Plasma 6 embeddable HTML component.
 %{_iconsdir}/*/*/*/webengine.*
 %{_libdir}/libkwebenginepart.so
 %{_libdir}/qt6/plugins/kf6/parts/webenginepart.so
-%{_kde6_services}/webenginepart.desktop
+%{_datadir}/kservices6/webenginepart.desktop
 %{_kde6_xmlguidir}/webenginepart/webenginepart.rc
 
 #----------------------------------------------------------------------------
