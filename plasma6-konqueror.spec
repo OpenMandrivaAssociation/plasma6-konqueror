@@ -225,7 +225,6 @@ based on %{name}.
 %{_includedir}/KF6/konq_popupmenu.h
 %{_includedir}/KF6/konq_version.h
 %{_includedir}/KF6/libkonq_export.h
-%{_includedir}/konqsidebarplugin.h
 %{_libdir}/cmake/KF6Konq
 %{_libdir}/libKF6Konq.so
 %{_libdir}/libkonqsidebarplugin.so
