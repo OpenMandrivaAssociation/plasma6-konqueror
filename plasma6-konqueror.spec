@@ -46,7 +46,7 @@ Requires:	%{name}-webenginepart
 %description
 KDE file and web browser.
 
-%files -f %{name}.lang
+%files -f konqueror.lang
 %{_datadir}/qlogging-categories6/konqueror.categories
 %{_kde6_applicationsdir}/kfmclient.desktop
 %{_kde6_applicationsdir}/kfmclient_html.desktop
