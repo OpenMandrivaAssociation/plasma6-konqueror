@@ -10,10 +10,7 @@ Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/konqueror-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6KCMUtils)
-BuildRequires:	cmake(KF6Activities)
-BuildRequires:	cmake(KF6KHtml)
-BuildRequires:	cmake(KF6Init)
-BuildRequires:	cmake(KF6KDELibs4Support)
+BuildRequires:	cmake(PlasmaActivities)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6Bookmarks)
@@ -25,14 +22,12 @@ BuildRequires:	cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(KF6IconThemes)
 BuildRequires:	cmake(KF6Su)
 BuildRequires:	cmake(KF6JobWidgets)
-BuildRequires:	pkgconfig(Qt6X11Extras)
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6DBus)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(Qt6TextToSpeech)
-BuildRequires:	pkgconfig(Qt6WebEngine)
+BuildRequires:	pkgconfig(Qt6WebEngineCore)
 BuildRequires:	pkgconfig(Qt6WebEngineWidgets)
-BuildRequires:	pkgconfig(Qt6Script)
 BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
@@ -270,8 +265,9 @@ based on %{name}.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n konqueror-%{version}
 %cmake \
+	-DQT_MAJOR_VERSION=6 \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
 
