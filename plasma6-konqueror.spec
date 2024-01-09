@@ -184,8 +184,6 @@ Plasma 6 embeddable HTML component.
 %{_iconsdir}/*/*/*/webengine.*
 %{_libdir}/libkwebenginepart.so
 %{_libdir}/qt6/plugins/kf6/parts/webenginepart.so
-%{_datadir}/kservices6/webenginepart.desktop
-%{_kde6_xmlguidir}/webenginepart/webenginepart.rc
 
 #----------------------------------------------------------------------------
 
