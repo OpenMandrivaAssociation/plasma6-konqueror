@@ -187,21 +187,6 @@ Plasma 6 embeddable HTML component.
 
 #----------------------------------------------------------------------------
 
-%define konquerorprivate_major 6
-%define libkonquerorprivate %mklibname konquerorprivate %{konquerorprivate_major}
-
-%package -n %{libkonquerorprivate}
-Summary:	Konqueror shared library
-Group:		System/Libraries
-
-%description -n %{libkonquerorprivate}
-Konqueror shared library.
-
-%files -n %{libkonquerorprivate}
-%{_libdir}/libkonquerorprivate.so.%{konquerorprivate_major}*
-
-#----------------------------------------------------------------------------
-
 %define kf6konq_major 6
 %define libkf6konq %mklibname KF6Konq %{kf6konq_major}
 
@@ -215,7 +200,7 @@ KDE Frameworks 6 Konq shared library.
 
 %files -n %{libkf6konq}
 %{_libdir}/libKF6Konq.so.%{kf6konq_major}*
-%{_libdir}/libKF6Konq.so.6.97.0
+%{_libdir}/libKF6Konq.so.5.97.0
 %{_libdir}/libkonqsidebarplugin.so.*
 %{_libdir}/libkonquerorprivate.so.*
 
