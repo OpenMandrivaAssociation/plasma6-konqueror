@@ -39,7 +39,7 @@ BuildRequires:	tidy-devel
 BuildRequires:	pkgconfig(hunspell)
 BuildRequires:	hunspell
 BuildRequires:	myspell-en
-Suggests:	keditbookmarks
+Suggests:	plasma6-keditbookmarks
 Suggests:	%{name}-plugins
 Requires:	%{name}-webenginepart
 
@@ -76,8 +76,7 @@ KDE file and web browser.
 %package plugins
 Summary:	Konqueror plugins
 Group:		Graphical desktop/KDE
-Requires:	konqueror
-%rename		konq-plugins
+Requires:	plasma6-konqueror
 
 %description plugins
 This module contains plugins that interact with Konqueror.
