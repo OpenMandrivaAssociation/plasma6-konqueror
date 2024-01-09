@@ -114,14 +114,12 @@ This module contains plugins that interact with Konqueror.
 %{_qtdir}/plugins/khtml/kpartplugins/uachangerpluginkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtml/kpartplugins/webarchiverpluginkhtml_kpartplugins.so
 %{_qtdir}/plugins/khtmlsettingsplugin.so
-%{_qtdir}/plugins/khtmlttsplugin.so
 %{_qtdir}/plugins/konqueror/kpartplugins/searchbarplugin.so
 %{_qtdir}/plugins/konqueror_kget_browser_integration.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/akregatorkonqfeediconkwebkitpart_kpartplugins.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/autorefreshkwebkitpart_kpartplugins.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/babelfishpluginkwebkitpart_kpartplugins.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/khtmlsettingspluginkwebkitpart_kpartplugins.so
-%{_qtdir}/plugins/kwebkitpart/kpartplugins/khtmlttspluginkwebkitpart_kpartplugins.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/konqueror_kget_browser_integrationkwebkitpart_kpartplugins.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/uachangerpluginkwebkitpart_kpartplugins.so
 %{_qtdir}/plugins/kwebkitpart/kpartplugins/webarchiverpluginkwebkitpart_kpartplugins.so
