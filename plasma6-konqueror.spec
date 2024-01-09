@@ -187,7 +187,7 @@ Plasma 6 embeddable HTML component.
 
 #----------------------------------------------------------------------------
 
-%define kf6konq_major 6
+%define kf6konq_major 5
 %define libkf6konq %mklibname KF6Konq %{kf6konq_major}
 
 %package -n %{libkf6konq}
@@ -200,7 +200,6 @@ KDE Frameworks 6 Konq shared library.
 
 %files -n %{libkf6konq}
 %{_libdir}/libKF6Konq.so.%{kf6konq_major}*
-%{_libdir}/libKF6Konq.so.5.97.0
 %{_libdir}/libkonqsidebarplugin.so.*
 %{_libdir}/libkonquerorprivate.so.*
 
