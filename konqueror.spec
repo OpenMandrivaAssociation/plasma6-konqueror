@@ -3,7 +3,7 @@
 Summary:	KDE file and web browser
 Name:		konqueror
 Version:	23.08.4
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
