@@ -3,11 +3,11 @@
 Summary:	KDE file and web browser
 Name:		plasma6-konqueror
 Version:	24.01.90
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/konqueror-%{version}.tar.xz
+Url:		https://www.kde.org
+Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/konqueror-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6KCMUtils)
 BuildRequires:	cmake(PlasmaActivities)
@@ -32,6 +32,10 @@ BuildRequires:	pkgconfig(Qt6TextToSpeech)
 BuildRequires:	pkgconfig(Qt6WebEngineCore)
 BuildRequires:	pkgconfig(Qt6WebEngineWidgets)
 BuildRequires:	pkgconfig(Qt6Test)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
+BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(zlib)
