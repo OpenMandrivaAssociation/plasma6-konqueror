@@ -1,13 +1,20 @@
+%define git 20240217
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	KDE file and web browser
 Name:		plasma6-konqueror
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/network/konqueror/-/archive/%{gitbranch}/konqueror-%{gitbranchd}.tar.bz2#/konqueror-%{git}.tar.bz2
+%else
 Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/konqueror-%{version}.tar.xz
+%endif
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6KCMUtils)
 BuildRequires:	cmake(PlasmaActivities)
@@ -260,7 +267,7 @@ based on %{name}.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n konqueror-%{version}
+%autosetup -p1 -n konqueror-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DQT_MAJOR_VERSION=6 \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
