@@ -155,7 +155,7 @@ This module contains plugins that interact with Konqueror.
 # = webarchive plugin =
 %{_bindir}/kcreatewebarchive
 %{_libdir}/qt6/plugins/webarchiverplugin.so
-#{_libdir}/qt6/plugins/webarchivethumbnail.so
+%{_libdir}/qt6/plugins/kf6/thumbcreator/webarchivethumbnail.so
 %{_datadir}/config.kcfg/kcreatewebarchive.kcfg
 %{_datadir}/icons/hicolor/*/actions/webarchiver.*
 %{_datadir}/kconf_update/webenginepart.upd
