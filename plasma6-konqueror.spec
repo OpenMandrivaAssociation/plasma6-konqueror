@@ -261,7 +261,6 @@ based on %{name}.
 %{_libdir}/cmake/KF6Konq
 %{_libdir}/libKF6Konq.so
 %{_libdir}/libkonqsidebarplugin.so
-%{_includedir}/KF6/asyncselectorinterface.h
 %{_includedir}/KF6/konqsidebarplugin.h
 
 #----------------------------------------------------------------------
