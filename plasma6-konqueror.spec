@@ -233,6 +233,7 @@ KDE Frameworks 6 Konq shared library.
 %files -n %{libkf6konq}
 %{_libdir}/libKF6Konq.so.%{kf6konq_major}*
 %{_libdir}/libKF6Konq.so.5*
+%{_libdir}/libKF6KonqSettings.so.*
 %{_libdir}/libkonqsidebarplugin.so.*
 %{_libdir}/libkonquerorprivate.so.*
 
@@ -258,8 +259,13 @@ based on %{name}.
 %{_includedir}/KF6/konq_popupmenu.h
 %{_includedir}/KF6/konq_version.h
 %{_includedir}/KF6/libkonq_export.h
+%{_includedir}/KF6/konqsettings.h
+%{_includedir}/KF6/konqsettings_version.h
+%{_includedir}/KF6/libkonqsettings_export.h
+%{_includedir}/KF6/selectorinterface.h
 %{_libdir}/cmake/KF6Konq
 %{_libdir}/libKF6Konq.so
+%{_libdir}/libKF6KonqSettings.so
 %{_libdir}/libkonqsidebarplugin.so
 %{_includedir}/KF6/konqsidebarplugin.h
 
