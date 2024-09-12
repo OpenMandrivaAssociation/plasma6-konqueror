@@ -5,7 +5,7 @@
 
 Summary:	KDE file and web browser
 Name:		plasma6-konqueror
-Version:	24.08.0
+Version:	24.08.1
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
