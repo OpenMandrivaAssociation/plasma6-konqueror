@@ -183,6 +183,7 @@ This module contains plugins that interact with Konqueror.
 %lang(pt) %{_docdir}/HTML/pt/kcontrol/*
 %lang(pt_BR) %{_docdir}/HTML/pt_BR/kcontrol/*
 %lang(ru) %{_docdir}/HTML/ru/kcontrol/*
+%lang(sl) %{_docdir}/HTML/sl/kcontrol/*
 %lang(sr) %{_docdir}/HTML/sr/kcontrol/*
 %lang(sr@latin) %{_docdir}/HTML/sr@latin/kcontrol/*
 %lang(sv) %{_docdir}/HTML/sv/kcontrol/*
