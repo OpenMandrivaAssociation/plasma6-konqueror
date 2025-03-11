@@ -305,6 +305,7 @@ based on %{name}.
 %find_lang uachangerplugin
 %find_lang webarchiver
 %find_lang kio6_bookmarks
+%find_lang konqsidebar
 cat *.lang >plugins.lang
 
 %find_lang konqueror
