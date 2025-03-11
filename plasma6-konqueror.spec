@@ -45,6 +45,7 @@ BuildRequires:  cmake(Qt6QmlNetwork)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
+BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	tidy-devel
 BuildRequires:	pkgconfig(hunspell)
