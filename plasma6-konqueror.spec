@@ -59,6 +59,7 @@ Requires:	%{name}-webenginepart
 KDE file and web browser.
 
 %files -f konqueror.lang
+%config %{_sysconfdir}/xdg/konqautofiltersrc
 %{_datadir}/qlogging-categories6/konqueror.categories
 %{_datadir}/applications/kfmclient.desktop
 %{_datadir}/applications/kfmclient_html.desktop
@@ -94,6 +95,11 @@ Requires:	plasma6-konqueror
 This module contains plugins that interact with Konqueror.
 
 %files plugins -f plugins.lang
+%{_qtdir}/plugins/khtml/kpartplugins/temporarysavedirkhtml_kpartplugins.so
+%{_qtdir}/plugins/kwebkitpart/kpartplugins/temporarysavedirkwebkitpart_kpartplugins.so
+%{_qtdir}/plugins/temporarysavedir.so
+%{_qtdir}/plugins/webenginepart/kpartplugins/temporarysavedirwebenginepart_kpartplugins.so
+%{_datadir}/konqueror/partsrcfiles/temporarysavedir.rc
 %{_bindir}/fsview
 %{_datadir}/akregator/pics/feed.png
 %{_datadir}/konqueror/icons/hicolor/*/actions/google.*
@@ -306,6 +312,7 @@ based on %{name}.
 %find_lang webarchiver
 %find_lang kio6_bookmarks
 %find_lang konqsidebar
+%find_lang temporarysavedir
 cat *.lang >plugins.lang
 
 %find_lang konqueror
