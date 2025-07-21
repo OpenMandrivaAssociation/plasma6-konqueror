@@ -5,7 +5,7 @@
 
 Summary:	KDE file and web browser
 Name:		konqueror
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -54,6 +54,7 @@ BuildRequires:	myspell-en
 Suggests:	plasma6-keditbookmarks
 Suggests:	%{name}-plugins
 Requires:	%{name}-webenginepart
+%rename plasma6-konqueror
 
 %description
 KDE file and web browser.
@@ -89,7 +90,8 @@ KDE file and web browser.
 %package plugins
 Summary:	Konqueror plugins
 Group:		Graphical desktop/KDE
-Requires:	plasma6-konqueror
+Requires:	konqueror >= 6.0
+%rename plasma6-konqueror-plugins
 
 %description plugins
 This module contains plugins that interact with Konqueror.
@@ -203,7 +205,7 @@ This module contains plugins that interact with Konqueror.
 %package libkonq
 Summary:	KDE Frameworks 6 Konq library support files
 Group:		Graphical desktop/KDE
-%rename		libkonq
+%rename		plasma6-libkonq
 
 %description libkonq
 KDE Frameworks 6 Konq library support files.
@@ -216,6 +218,7 @@ KDE Frameworks 6 Konq library support files.
 %package webenginepart
 Summary:	Plasma 6 embeddable HTML component
 Group:		Graphical desktop/KDE
+%rename plasma6-webenginepart
 
 %description webenginepart
 Plasma 6 embeddable HTML component.
